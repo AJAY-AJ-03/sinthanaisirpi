@@ -27,7 +27,7 @@ app.use(express.json());
 app.use('/public', express.static(path.join(__dirname, '../public')));
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/school_portal')
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://rathnamajay3:IaRjwezwN5xga8Mk@cluster0.xjmp2ld.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
   .then(() => console.log('Connected to MongoDB'))
   .catch((err) => console.error('MongoDB connection error:', err));
 
